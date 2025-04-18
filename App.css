@@ -1,0 +1,463 @@
+/* General App Styling */
+.app-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #1e1e2e, #252542);
+  color: white;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Glassmorphic Header */
+.app-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  color: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  width: 90%;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Glassmorphic Feature Cards */
+.feature-card {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-left: 5px solid #ffcc00;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.feature-content {
+  padding: 12px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Buttons */
+button {
+  background-color: #ffcc00;
+  color: rgb(241, 223, 223);
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffb700;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.app-footer {
+  background-color: #181826;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Login Page Styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #a4a4b8, #1e1e2e);
+  color: #f0e0e0;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Login Box (Glassmorphism) */
+.login-box {
+  background: rgba(199, 176, 176, 0.15);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(209, 201, 201, 0.1);
+  width: 400px;
+  max-width: 90%;
+  backdrop-filter: blur(15px);
+}
+
+/* Login Header */
+.login-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ebe5e5;
+}
+
+/* Input Fields */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(184, 152, 152, 0.2);
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  background: #ffcc00;
+  color: rgb(230, 193, 193);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #ffb700;
+  transform: scale(1.05);
+}
+
+/* Signup Link */
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #9a5c5c;
+}
+
+.signup-link a {
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Root Layout Styling */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #1e1e2e, #252542);
+  color: #8478b1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background: rgba(233, 205, 205, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(183, 168, 168, 0.1);
+}
+
+.sidebar h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #e6bf20;
+  text-align: center;
+}
+
+/* Sidebar Links */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav li {
+  margin-bottom: 12px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #a19898;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar nav a:hover {
+  background: rgba(216, 199, 199, 0.12);
+  color: #ffcc00;
+  transform: scale(1.03);
+}
+
+.sidebar nav .active {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+/* Sign Out Button */
+.sidebar button {
+  margin-top: auto;
+  padding: 10px 16px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #ffb700;
+  transform: scale(1.05);
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Dashboard Card Style */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 14px rgba(179, 119, 119, 0.1);
+  backdrop-filter: blur(12px);
+  color: #dabbbb;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+.dashboard-card h3 {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  color: #e7cccc;
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar nav li {
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .login-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-header p {
+    font-size: 1rem;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(196, 181, 181, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(227, 208, 208, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Animation for sidebar toggle */
+.sidebar-transition {
+  transition: all 0.3s ease;
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: auto;
+  background-color: #333;
+  color: #c88181;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Dark mode specific styles */
+.dark-mode {
+  color-scheme: dark;
+}
+
+.dark-mode .app-container,
+.dark-mode .app-layout {
+  background: linear-gradient(to right, #0f0f1a, #1a1a2e);
+}
+
+.dark-mode .sidebar {
+  background: rgba(170, 150, 150, 0.2);
+}
+
+.dark-mode .feature-card,
+.dark-mode .dashboard-card {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .input-group {
+  background: rgba(243, 234, 234, 0.3);
+}
+
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.sidebar-item {
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #f3f4f6;
+}
+
+.active-tab {
+  background-color: #ebf5ff;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(182, 170, 170, 0.1);
+}
+
+.login-intro {
+  font-size: 0.95rem;
+  color: #c8cfd9;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.login-intro {
+  font-size: 0.95rem;
+  color: #e5e8eb;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  line-height: 1.5;
+}
